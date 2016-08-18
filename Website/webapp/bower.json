@@ -1,13 +1,22 @@
 {
-  "name": "Portfolio",
-  "main": "index.html",
+  "name": "webapp",
+  "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "fullpage.js": "^2.8.4"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-    "web-component-tester": "^4.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
   }
 }
